@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"/>
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
-    <!-- Header Section -->
     <header class="header">
       <nav class="nav bd_grid">
         <div>
@@ -47,7 +50,6 @@
     </header>
 
     <main class="main">
-      <!-- HOME SECTION -->
       <section class="home bd_grid" id="home">
         <div class="home_data" data-aos="fade-down">
           <h1 class="home_title">
@@ -55,11 +57,15 @@
             ><br />Web Developer
           </h1>
           <a href="#contact" class="button"> Contact</a>
-          <a href="https://drive.google.com/file/d/128tlikGIwZ3ibtMp4GAQeIt9v6Ge89Jo/view?usp=drivesdk" class="button"> Resume</a>
-      </div>
+          <a
+            href="https://drive.google.com/file/d/1mHzf-R79OZhm4xOwZ0u-uaTS7CBa77H4/view?usp=drivesdk"
+            class="button"
+          >
+            Resume</a
+          >
+        </div>
 
         <div class="home_social">
-          
           <a
             href="http://linkedin.com/in/abdulbasith2004"
             class="home_social-icon"
@@ -67,7 +73,7 @@
             data-aos-delay="300"
             ><i class="bx bxl-linkedin"></i
           ></a>
-          
+
           <a
             href="https://github.com/abdulbasith1604"
             class="home_social-icon"
@@ -75,152 +81,178 @@
             data-aos-delay="350"
             ><i class="bx bxl-github"></i
           ></a>
-          
-         
-          
+
+          <a
+            href="https://leetcode.com/u/abdulbasith1604/"
+            class="home_social-icon leetcode-icon"
+            data-aos="fade-down"
+            data-aos-delay="400"
+            target="_blank"
+            title="LeetCode"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+              alt="LeetCode"
+            />
+          </a>
         </div>
         <div class="home_img" data-aos="fade-down" data-aos-delay="500">
-          <img src="./assets/img/me.png"/>
+          <img src="./assets/img/me.png" />
         </div>
-    
       </section>
 
-      <!-- ABOUT SECTION -->
       <section class="about section" id="about">
         <h2 class="section-title" data-aos="fade-down">Education</h2>
 
         <div class="about_container bd_grid">
-          <div class="education-item">
-            <h3 class="education-title">B.E Computer Science And Engineering</h3>
-            <p class="education-info">PSNA College of Engineering And Technology, Dindigul, Tamil Nadu</p>
+          <div class="education-item" data-aos="fade-right">
+            <h3 class="education-title">
+              B.E Computer Science And Engineering
+            </h3>
+            <p class="education-info">
+              PSNA College of Engineering And Technology, Dindigul, Tamil Nadu
+            </p>
             <p class="education-year">2021 - 2025</p>
             <p class="education-cgpa">CGPA: 8.17</p>
           </div>
-      
-          <div class="education-item">
+
+          <div
+            class="education-item"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <h3 class="education-title">Higher Secondary Education</h3>
-            <p class="education-info">KVT Matriculation Higher Secondary School, Madurai, Tamil Nadu</p>
+            <p class="education-info">
+              KVT Matriculation Higher Secondary School, Madurai,
+              Tamil&nbsp;Nadu
+            </p>
             <p class="education-year">2021</p>
             <p class="education-percentage">Percentage: 92.33%</p>
           </div>
-      
-          <div class="education-item">
+
+          <div
+            class="education-item"
+            data-aos="fade-right"
+            data-aos-delay="400"
+          >
             <h3 class="education-title">SSLC</h3>
-            <p class="education-info">KVT Matriculation Higher Secondary School, Madurai, Tamil Nadu</p>
+            <p class="education-info">
+              KVT Matriculation Higher Secondary School, Madurai,
+              Tamil&nbsp;Nadu
+            </p>
             <p class="education-year">2019</p>
             <p class="education-percentage">Percentage: 91.8%</p>
           </div>
         </div>
-        </div>
       </section>
 
-      <!-- SKILLS SECTION -->
       <section class="skills section" id="skills">
         <h2 class="section-title" data-aos="fade-down">Skills</h2>
 
-        <div class="skills_container bd_grid" style="display:grid; align-items: center;justify-content: center;justify-items: center;">
-          <div>
-            <h2
-              class="skills_subtitle"
-              data-aos="fade-down"
-              data-aos-delay="250"
-            >
-              Professional Skills
-            </h2>
-            <p class="skills_text" data-aos="fade-down" data-aos-delay="350">
-              Without sharpen your weapon; standing on the battlefield would not
-              increase your chance of winning
-            </p>
-            <!-- SKILLS HTML -->
-            <div class="skills_data" data-aos="fade-right">
-              <div class="skills_name">
-                <i class="bx bxl-html5 skill_icon"></i>
-                <span class="skill_name">Html5</span>
-              </div>
-
-              <div><span class="skill_percentage">90%</span></div>
-
-              <div class="skill_bar skill_html"></div>
+        <div class="skills_container bd_grid">
+          <div class="skill-category" data-aos="fade-up">
+            <h3>Programming Languages</h3>
+            <div class="skill-list">
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">JavaScript (ES6)</span>
             </div>
-
-            <!-- SKILLS css -->
-            <div class="skills_data" data-aos="fade-right" data-aos-delay="250">
-              <div class="skills_name">
-                <i class="bx bxl-css3 skill_icon"></i>
-                <span class="skill_name">CSS3</span>
-              </div>
-
-              <div><span class="skill_percentage">70%</span></div>
-
-              <div class="skill_bar skill_css"></div>
-            </div>
-
-            <!-- SKILLS JS -->
-            <div class="skills_data" data-aos="fade-right" data-aos-delay="250">
-              <div class="skills_name">
-                <i class="bx bxl-javascript skill_icon"></i>
-                <span class="skill_name">JS</span>
-              </div>
-
-              <div><span class="skill_percentage">40%</span></div>
-
-              <div class="skill_bar skill_js"></div>
-            </div>
-
-            <!-- SKILLS SQL -->
-            <div class="skills_data" data-aos="fade-right" data-aos-delay="250">
-              <div class="skills_name">
-                <i class="bx bxl-postgresql  skill_icon"></i>
-                <span class="skill_name"> SQL </span>
-              </div>
-
-              <div><span class="skill_percentage">60%</span></div>
-
-              <div class="skill_bar skill_sql"></div>
-            </div>
-
-             <!-- SKILLS JAVA -->
-            <div class="skills_data" data-aos="fade-right" data-aos-delay="250">
-              <div class="skills_name">
-                <i class="bx bxl-java skill_icon"></i>
-                <span class="skill_name">Java</span>
-              </div>
-              <div><span class="skill_percentage">75%</span></div>
-
-              <div class="skill_bar skill_java"></div>
-            </div>
-             
-          </div>
-          <img src="./assets//img/summa.png" alt="" data-aos="fade-right">
           </div>
 
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+            <h3>Data Structures & Algorithms</h3>
+            <div class="skill-list">
+              <span class="skill-tag">Arrays</span>
+              <span class="skill-tag">Strings</span>
+              <span class="skill-tag">Linked List</span>
+            </div>
+          </div>
 
-          <div data-aos="fade-left" data-aos-delay="350">
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+            <h3>Frontend Technologies</h3>
+            <div class="skill-list">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">Bootstrap</span>
+            </div>
+          </div>
 
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+            <h3>Backend Technologies</h3>
+            <div class="skill-list">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">RESTful APIs</span>
+            </div>
+          </div>
+
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+            <h3>Database Systems</h3>
+            <div class="skill-list">
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">MySQL</span>
+            </div>
+          </div>
+
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+            <h3>Version Control</h3>
+            <div class="skill-list">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+            </div>
+          </div>
+
+          <div
+            class="skill-category"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            style="grid-column: 1 / -1"
+          >
+            <h3>Subject Expertise</h3>
+            <div class="skill-list">
+              <span class="skill-tag">Object Oriented Programming (OOPS)</span>
+              <span class="skill-tag">DBMS</span>
+              <span class="skill-tag">Operating Systems (Basics)</span>
+              <span class="skill-tag">Computer Networks (Basics)</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- WORK SECTION -->
       <section class="work section" id="projects">
         <h2 class="section-title" data-aos="fade-down">Projects</h2>
         <div class="projects-container" data-aos="fade-down">
           <div class="project">
-            <h2 class="project-header"> Startup Portal for Public</h2>
-            <p class="project-category">Full Stack Web Application (Frontend + Backend + Database)</p>
+            <h2 class="project-header">Startup Portal for Public</h2>
+            <p class="project-category">
+              Full Stack Web Application (Frontend + Backend + Database)
+            </p>
             <ul class="tech-stack">
               <li>React.js</li>
               <li>Express.js</li>
               <li>PostgreSQL</li>
               <li>Prisma ORM</li>
             </ul>
-            <p class="project-description"> Developed a centralized platform for AYUSH-based startups to register, submit proposals, access government schemes, and receive investor funding. Includes secure role-based authentication, LSTM-based recommendation system, AR wellness modules. Frontend hosted on Vercel and backend on Render.</p>
-            <br>
+            <p class="project-description">
+              Developed a centralized platform for AYUSH-based startups to
+              register, submit proposals, access government schemes, and receive
+              investor funding. Includes secure role-based authentication,
+              LSTM-based recommendation system, AR wellness modules. Frontend
+              hosted on Vercel and backend on Render.
+            </p>
+            <br />
             <div class="project-links">
-              <a href="https://startup-portal-ayush.vercel.app/" target="_blank" class="project-btn">
+              <a
+                href="https://startup-portal-ayush.vercel.app/"
+                target="_blank"
+                class="project-btn"
+              >
                 <i class="fas fa-globe"></i> Live Demo
               </a>
-              <a href="https://github.com/abdulbasith1604/Startup_Portal" target="_blank" class="project-btn">
+              <a
+                href="https://github.com/abdulbasith1604/Startup_Portal"
+                target="_blank"
+                class="project-btn"
+              >
                 <i class="fab fa-github"></i> GitHub
               </a>
             </div>
@@ -234,18 +266,26 @@
               <li>MySQL</li>
               <li>JDBC</li>
             </ul>
-            <p class="project-description">Developed a Java-based application to manage registration and login for students and colleges, allowing users to perform role-specific operations. Implemented a MySQL database with JDBC for data storage and retrieval, supporting user authentication, data updates, and deletions based on user roles.</p>
-            <br>
+            <p class="project-description">
+              Developed a Java-based application to manage registration and
+              login for students and colleges, allowing users to perform
+              role-specific operations. Implemented a MySQL database with JDBC
+              for data storage and retrieval, supporting user authentication,
+              data updates, and deletions based on user roles.
+            </p>
+            <br />
             <div class="project-links">
-              <a href="https://github.com/abdulbasith1604/Academic-Connect-System" target="_blank" class="project-btn">
+              <a
+                href="https://github.com/abdulbasith1604/Academic-Connect-System"
+                target="_blank"
+                class="project-btn"
+              >
                 <i class="fab fa-github"></i> GitHub
               </a>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- CONTACT SECTION -->
 
       <section class="contact section" id="contact">
         <h2 class="section-title" data-aos="fade-down">Contact</h2>
@@ -287,7 +327,6 @@
         </div>
       </section>
 
-      <!-- Footer Section -->
       <footer class="footer">
         <p class="footer_title" data-aos="fade-down">Abdul Basith</p>
 
@@ -306,11 +345,22 @@
             data-aos-delay="350"
             ><i class="bx bxl-github"></i
           ></a>
-         
+          <a
+            href="https://leetcode.com/u/abdulbasith1604/"
+            class="footer_icon leetcode-footer"
+            data-aos="fade-down"
+            data-aos-delay="400"
+            target="_blank"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+              alt="LeetCode"
+            />
+          </a>
         </div>
 
-        <p data-aos="fade-down" data-aos-delay="650">
-          &#169; 2025 copyright all right reserved
+        <p data-aos="fade-down" data-aos-delay="650" data-aos-offset="0">
+          &#169; 2026 copyright all right reserved
         </p>
       </footer>
     </main>

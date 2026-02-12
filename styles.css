@@ -206,26 +206,39 @@ img {
 }
 
 .home_social-icon {
-  width: max-content;
-  margin-bottom: var(--mb-2);
-  font-size: 1.5rem;
-  color: var(--second-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  font-size: 1.6rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
 }
 
 .home_social-icon:hover {
-  color: var(--first-color);
+  color: #fff;
+  background-color: var(--first-color);
+  transform: translateY(-4px);
 }
 
 .home_img {
   position: absolute;
   right: 0;
-  bottom: 0;
-  width: 300px;
+  bottom: 140px; /* CHANGED: Was 0. Increase this number to move it up */
+  width: 280px;  /* OPTIONAL: Slightly reduce width (was 300px) so it doesn't cover the buttons */
 }
 
 .round-image {
   border-radius: 10%;
 }
+
+.leetcode-icon img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
 
 /* BUTTONS */
 .button {
@@ -267,11 +280,12 @@ img {
   background-color: var(--first-color);
 }
 
-/* ABOUT SECTION */
+/* ABOUT SECTION - EDUCATION FIX */
 
 .about_container {
-  display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust column width as needed */
+  /* Changed from flex to grid for better responsiveness */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
@@ -280,6 +294,11 @@ img {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
 }
 
 .education-title {
@@ -297,71 +316,58 @@ img {
 }
 
 
-/* SKILLS */
+/* SKILLS - NEW DESIGN */
 .skills_container {
   row-gap: 2rem;
+  /* Ensure grid layout for cards */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-category {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(14, 36, 49, 0.10);
   text-align: center;
+  border: 1px solid #f0f0f0;
+  transition: transform 0.3s;
 }
 
-.skills_subtitle {
-  margin-bottom: var(--mb-2);
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(14, 36, 49, 0.15);
 }
 
-.skills_text {
-  margin-bottom: var(--mb-4);
-}
-
-.skills_data {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  font-weight: var(--font-semi);
-  padding: 0.5rem 1rem;
-  margin-bottom: var(--mb-4);
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-}
-
-.skill_icon {
-  font-size: 2rem;
-  margin-right: var(--mb-2);
+.skill-category h3 {
+  font-size: 1.1rem;
   color: var(--first-color);
+  margin-bottom: 1.2rem;
+  font-weight: var(--font-semi);
 }
 
-.skills_name {
+.skill-list {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
 }
 
-.skill_bar {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.skill-tag {
+  background-color: #eef2ff;
+  color: var(--first-color);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid rgba(64, 112, 244, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.skill-tag:hover {
   background-color: var(--first-color);
-  height: 0.25rem;
-  border-radius: 0.5rem;
-  z-index: var(--z-back);
-}
-
-.skill_html {
-  width: 90%;
-}
-
-.skill_css {
-  width: 70%;
-}
-
-.skill_js {
-  width: 40%;
-}
-
-.skill_sql {
-  width: 60%;
-}
-
-.skill_java {
-  width: 75%;
+  color: #fff;
 }
 
 
@@ -406,9 +412,32 @@ img {
 }
 
 .footer_icon {
-  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 1.4rem;
   color: #fff;
-  margin: 0 var(--mb-2);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.footer_icon:hover {
+  background-color: var(--first-color);
+  transform: translateY(-4px);
+}
+
+.leetcode-footer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leetcode-footer img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
 }
 
 @media screen and (min-width: 768px) {
@@ -478,12 +507,12 @@ img {
   .home_img svg {
     width: 100%;
   }
-
+  
+  /* Reset alignment for larger screens if needed */
   .about_container,
   .skills_container {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
     text-align: initial;
+    align-items: start;
   }
 
   .about_img svg {
@@ -554,16 +583,20 @@ img {
    margin-bottom: 10px;
  }
 
- .tech-stack li {
-   margin-right: 10px;
-   padding: 5px 10px;
-   border-radius: 5px;
-   background-color: #4070F4;
-   color: #ffffff;
-   font-size: 12px;
-   list-style-type: none;
-   display: inline;
- }
+.tech-stack li {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #4070F4;
+  color: #ffffff;
+  font-size: 12px;
+  list-style-type: none;
+  
+  /* --- NEW CHANGES --- */
+  display: inline-block; /* Allows the element to respect padding/margins properly */
+  white-space: nowrap;   /* Forces the text to stay on one line */
+  margin-bottom: 5px;    /* Adds space between rows of tags on mobile */
+}
 
  .project-description {
    font-size: 16px;
@@ -617,4 +650,3 @@ img {
    z-index: 9999;
    /* Ensure it's on top */
  }
-
